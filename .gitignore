@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Dependency management
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Database and output
+*.db
+output_prod/

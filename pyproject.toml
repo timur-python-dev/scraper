@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mymeet_scraper"
+version = "1.0.0"
+description = "Just scraper"
+authors = ["Timur"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.3"
+aiosqlite = "^0.18.0"
+beautifulsoup4 = "^4.11.1"
+lxml = "^6.0.0"
+python-dotenv = "^0.21.0"
+python-magic = "^0.4.27" # Для надежного определения типа файла
+aiofiles = "^24.1.0"
+
+[tool.poetry.scripts]
+scrape = "mymeet_scraper.main:run"
