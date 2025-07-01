@@ -8,7 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 BASE_URL = os.getenv("BASE_URL", "https://mymeet.ai")
 OUTPUT_DIR = BASE_DIR / os.getenv("OUTPUT_DIR", "output")
-DB_PATH = BASE_DIR / os.getenv("DB_PATH", "scraper_state.db")
+DB_PATH = OUTPUT_DIR / "scraper_state.db"
+
+IMAGES_DIR = OUTPUT_DIR / "images"
+TEXT_DIR = OUTPUT_DIR / "text"
 
 MAX_CONCURRENT_DOWNLOADS = int(os.getenv("MAX_CONCURRENT_DOWNLOADS", 10))
 
